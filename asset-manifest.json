@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tomato_web/static/css/main.b5562c93.chunk.css",
+    "main.js": "/tomato_web/static/js/main.ad2780bc.chunk.js",
+    "main.js.map": "/tomato_web/static/js/main.ad2780bc.chunk.js.map",
+    "runtime-main.js": "/tomato_web/static/js/runtime-main.511a053a.js",
+    "runtime-main.js.map": "/tomato_web/static/js/runtime-main.511a053a.js.map",
+    "static/js/2.a28e2b75.chunk.js": "/tomato_web/static/js/2.a28e2b75.chunk.js",
+    "static/js/2.a28e2b75.chunk.js.map": "/tomato_web/static/js/2.a28e2b75.chunk.js.map",
+    "index.html": "/tomato_web/index.html",
+    "precache-manifest.168954d6aa6be63ec75f9c89d1175bc5.js": "/tomato_web/precache-manifest.168954d6aa6be63ec75f9c89d1175bc5.js",
+    "service-worker.js": "/tomato_web/service-worker.js",
+    "static/css/main.b5562c93.chunk.css.map": "/tomato_web/static/css/main.b5562c93.chunk.css.map",
+    "static/js/2.a28e2b75.chunk.js.LICENSE.txt": "/tomato_web/static/js/2.a28e2b75.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.511a053a.js",
+    "static/js/2.a28e2b75.chunk.js",
+    "static/css/main.b5562c93.chunk.css",
+    "static/js/main.ad2780bc.chunk.js"
+  ]
+}
