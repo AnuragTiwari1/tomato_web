@@ -1,0 +1,5 @@
+import { restaurantsReducer } from "./restaurantReducer";
+import { appReducer } from "./appReducer";
+import { combineReducers } from "redux";
+
+export const rootReducer = combineReducers({ restaurantsReducer, appReducer });
