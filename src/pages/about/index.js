@@ -2,6 +2,7 @@ import React from "react";
 import { RestaurantServices } from "../../services/restaurantServices";
 import { setLoader } from "../../state/reducers/appReducer/actions";
 import { useDispatch } from "react-redux";
+// const resDetails = require("../../mocks/restuarantDetails.json");
 
 export function About(props) {
   const {
@@ -9,7 +10,7 @@ export function About(props) {
   } = props;
 
   const dispatch = useDispatch();
-  const [resDetails, setResDetails] = React.useState({});
+  const [resDetails, setResDetails] = React.useState(null);
 
   const restaurantServices = new RestaurantServices();
 
@@ -28,10 +29,36 @@ export function About(props) {
       });
   }, [params.resId]);
 
+  if (!resDetails) {
+    return null;
+  }
+
   return (
-    <div>
+    <div style={{ padding: "5px" }}>
       <h2>About</h2>
-      <code>{JSON.stringify(resDetails, null, 2)}</code>
+      {!!resDetails.thumb && (
+        <img alt="image" src={resDetails.thumb} loading="lazy"></img>
+      )}
+      <h3>{resDetails.name}</h3>
+      <p>
+        {resDetails.establishment} - {resDetails.cuisines}
+      </p>
+      <p>{resDetails.location.locality_verbose}</p>
+      <p>
+        {resDetails.is_delivering_now ? "Open now" : "Closed"}{" "}
+        {resDetails.timings} (Today)
+      </p>
+      <p>Highlights: {resDetails.highlights}</p>
+      <p>
+        average cost for 2 : {resDetails.currency}{" "}
+        {resDetails.average_cost_for_two}{" "}
+        <span style={{ float: "right" }}>
+          ⭐&nbsp;{resDetails.user_rating.aggregate_rating}
+        </span>
+      </p>
+      <a style={{ float: "right" }} href={resDetails.url}>
+        Order Now
+      </a>
     </div>
   );
 }
