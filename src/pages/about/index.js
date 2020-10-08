@@ -48,7 +48,7 @@ export function About(props) {
         {resDetails.is_delivering_now ? "Open now" : "Closed"}{" "}
         {resDetails.timings} (Today)
       </p>
-      <p>Highlights: {resDetails.highlights}</p>
+      <p>Highlights: {resDetails.highlights.join(", ")}</p>
       <p>
         average cost for 2 : {resDetails.currency}{" "}
         {resDetails.average_cost_for_two}{" "}
