@@ -1,13 +1,14 @@
-.cuisineCard {
+.fancyCard {
   border-radius: 10px;
   padding: 15px;
   margin: 5px;
-  background-color: "rgba(0,0,0,0.3)";
+  background-color: rgba(0, 0, 0, 0.3);
   font-size: 25px;
-  color: "white";
+  color: white;
+  min-width: 200px;
 }
 
-.cuisineCard:hover {
+.fancyCard:hover {
   transition: ease-in 500ms;
-  background-color: "rgba(0,0,0,0.6)";
+  background-color: rgba(0, 0, 0, 0.6);
 }

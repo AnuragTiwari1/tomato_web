@@ -11,6 +11,9 @@ export const Loader = (props) => {
         flexDirection: "column",
         justifyContent: "center",
         backgroundColor: "rgba(0,0,0,0.5)",
+        position: "absolute",
+        zIndex: 100,
+        top: "0px",
       }}
     >
       <p style={{ color: "white", fontSize: 25, fontWeight: "bold" }}>
